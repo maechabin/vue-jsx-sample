@@ -12,7 +12,7 @@ export default class GrandChild extends Vue {
     return (
       <div>
         <h3>GrandChild</h3>
-        {bar}
+        <p>Hello {bar}</p>
       </div>
     );
   }

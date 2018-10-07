@@ -12,7 +12,7 @@ export default class Child extends Vue {
     return (
       <div>
         <h2>Child</h2>
-        {props("foo")}
+        {props('Vue')}
       </div>
     );
   }

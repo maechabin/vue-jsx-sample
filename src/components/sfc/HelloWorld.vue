@@ -6,8 +6,8 @@ import GrandChild from './GrandChild.vue';
 
 @Component({
   components: {
-    'grand-child': GrandChild
-  }
+    'grand-child': GrandChild,
+  },
 })
 export default class HelloWorld extends Vue {
   render(h: CreateElement): VNode {
