@@ -3,7 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "jsxFactory": "h",
     "importHelpers": true,
     "moduleResolution": "node",
@@ -18,12 +18,6 @@
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
   "exclude": ["node_modules"]
 }
