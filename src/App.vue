@@ -7,11 +7,13 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-//import HelloWorld from './components/helloworld/HelloWorld.vue';
-import HelloWorld from './components/helloworld/HelloWorld';
+// import HelloWorld from './components/helloworld/HelloWorld.vue';
+// import HelloWorld from './components/helloworld/HelloWorld';
 // import HelloWorld from './components/sfc/HelloWorld.vue';
 // import HelloWorld from './components/tsx/HelloWorld';
-//import HelloWorld from './components/hoc/HelloWorld';
+// import HelloWorld from './components/hoc/HelloWorld';
+
+import HelloWorld from './components/mousetracker/MouseTracker';
 
 @Component({
   components: {
@@ -28,6 +30,7 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 32px;
+  height: 100vh;
 }
 </style>
