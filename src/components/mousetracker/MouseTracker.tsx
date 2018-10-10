@@ -5,11 +5,7 @@ import Mouse from './Mouse';
 import Cat from './Cat';
 
 function withSample(WrappedComponent: any) {
-  @Component({
-    components: {
-      Mouse,
-    },
-  })
+  @Component
   class MouseTracker extends Vue {
     public render(h: CreateElement): VNode {
       return <Mouse props={(mouse: { x: number; y: number }) => <WrappedComponent mouse={mouse} />} />;

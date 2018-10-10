@@ -8,7 +8,7 @@ export default class Cat extends Vue {
 
   public render(h: CreateElement): VNode {
     return (
-      <div>
+      <div style={{ position: 'absolute', top: `${this.mouse.y}px`, left: `${this.mouse.x}px` }}>
         x座標: {this.mouse.x} / y座標: {this.mouse.y}
       </div>
     );
