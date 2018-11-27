@@ -1,12 +1,13 @@
-import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import { mount } from '@vue/test-utils';
+import HelloWorld from '@/components/helloworld/HelloWorld.tsx';
 
-describe('HelloWorld.vue', () => {
+describe('HelloWorld.tsx', () => {
   it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
+    // setup
+    const msg = 'world';
+    const wrapper = mount(HelloWorld);
+
+    // verify
     expect(wrapper.text()).toMatch(msg);
   });
 });
