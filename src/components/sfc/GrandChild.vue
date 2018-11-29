@@ -5,9 +5,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class GrandChild extends Vue {
   @Prop()
-  bar!: string;
+  public bar!: string;
 
-  render(h: CreateElement): VNode {
+  public render(h: CreateElement): VNode {
     const { bar } = this;
     return (
       <div>

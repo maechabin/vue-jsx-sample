@@ -10,7 +10,7 @@ import GrandChild from './GrandChild.vue';
   },
 })
 export default class HelloWorld extends Vue {
-  render(h: CreateElement): VNode {
+  public render(h: CreateElement): VNode {
     return (
       <div>
         <h1>Parent</h1>
