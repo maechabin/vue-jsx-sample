@@ -4,6 +4,12 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 import Child from './Child';
 import GrandChild from './GrandChild';
 
+declare module 'vue/types/options' {
+  interface ComponentOptions<V extends Vue> {
+    foo?: (foo: string) => VNode;
+  }
+}
+
 function withSample(WrappedComponent: any) {
   @Component
   class Hello extends Vue {
@@ -20,7 +26,7 @@ function withSample(WrappedComponent: any) {
           <h1 style={style} onClick={handleClick}>
             Parent
           </h1>
-          <Child props={(foo: string): VNode => <WrappedComponent bar={foo} />} />
+          <Child foo={(foo: string): VNode => <WrappedComponent bar={foo} />} />
         </div>
       );
     }

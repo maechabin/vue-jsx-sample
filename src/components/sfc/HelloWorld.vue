@@ -14,7 +14,7 @@ export default class HelloWorld extends Vue {
     return (
       <div>
         <h1>Parent</h1>
-        <Child props={(foo: string) => <grand-child bar={foo} />} />
+        <Child foo={(foo: string) => <grand-child bar={foo} />} />
       </div>
     );
   }
