@@ -11,11 +11,12 @@ export default class Mouse extends Vue {
     y: 0,
   };
 
-  public handleMouseMove(event: any) {
-    this.data = Object.assign({}, this.data, {
+  public handleMouseMove(event: MouseEvent) {
+    this.data = {
+      ...this.data,
       x: event.x,
       y: event.y,
-    });
+    };
   }
 
   public render(h: CreateElement): VNode {
