@@ -11,8 +11,7 @@
   "dependencies": {
     "vue": "^2.5.17",
     "vue-class-component": "^6.3.2",
-    "vue-property-decorator": "^7.2.0",
-    "vue-tsx-support": "^2.2.1"
+    "vue-property-decorator": "^7.2.0"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",
