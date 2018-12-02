@@ -22,7 +22,7 @@ export default class Mouse extends Vue {
   public render(h: CreateElement): VNode {
     const { rendering } = this;
     return (
-      <div style={{ height: '300px', border: '1px solid #333' }} onMousemove={this.handleMouseMove}>
+      <div style={{ height: '300px', border: '2px solid #333' }} onMousemove={this.handleMouseMove}>
         {rendering(this.data)}
       </div>
     );
