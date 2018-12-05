@@ -4,14 +4,11 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class Mouse extends Vue {
   @Prop()
-  public rendering!: (mouse: { x: number; y: number }) => VNode;
+  private rendering!: (mouse: { x: number; y: number }) => VNode;
 
-  public data = {
-    x: 0,
-    y: 0,
-  };
+  private data = { x: 0, y: 0 };
 
-  public handleMouseMove(event: MouseEvent) {
+  private handleMouseMove(event: MouseEvent) {
     this.data = {
       ...this.data,
       x: event.x,
@@ -19,10 +16,10 @@ export default class Mouse extends Vue {
     };
   }
 
-  public render(h: CreateElement): VNode {
+  private render(h: CreateElement): VNode {
     const { rendering } = this;
     return (
-      <div style={{ height: '300px', border: '2px solid #333' }} onMousemove={this.handleMouseMove}>
+      <div style={{ height: '100%' }} onMousemove={this.handleMouseMove}>
         {rendering(this.data)}
       </div>
     );
